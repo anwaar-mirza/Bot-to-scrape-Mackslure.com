@@ -149,7 +149,7 @@ def execution_process(ch):
         bot = MackslaureData()
         path = os.getcwd()
         timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
-        file_path = os.path.join(path, f"data\\{choice}-{timestamp}.csv")
+        file_path = os.path.join(path, f"{choice}-{timestamp}.csv")
         bot.select_product_to_scrape(choice)
         results = bot.get_product_links()
         for r in results:
